@@ -1,0 +1,22 @@
+/node_modules
+
+# data definition files
+**/*.d.ts
+
+# testing
+/coverage
+
+# production
+/build
+
+# build
+/dist
+
+# docs
+/build-docs
+
+# generated graphql
+**/graphql.ts
+
+# elastic helper, tobe fixed
+**/ESHelpers.ts

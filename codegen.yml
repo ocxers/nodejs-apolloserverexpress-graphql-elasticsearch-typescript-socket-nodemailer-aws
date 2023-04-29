@@ -1,0 +1,14 @@
+overwrite: true
+schema: "./src/graphql/typeDefs"
+documents: null
+generates:
+  src/typings/graphql.ts:
+    config:
+      namingConvention:
+        enumValues: keep
+      defaultMapper: Partial<{T}> | undefined
+      maybeValue: "T"
+      useIndexSignature: true
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"

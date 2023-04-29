@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>ELC Trends Dashboard</title>
+    <!--[if !mso]>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"><!--<![endif]-->
+    <style>
+      body {
+        background-color: #fff;
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+        color: #767676;
+        font-family: 'Avenir Next', Roboto, Lato, Helvetica, Arial, sans-serif;
+      }
+
+      .elc-email-template-table {
+        text-decoration: none;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: #ffffff;
+        width: 100%;
+        border: none;
+      }
+
+      .elc-email-template-table-inner {
+        width: 100%;
+        margin: 0 auto 50px;
+        text-align: left;
+      }
+
+      .elc-email-template-table-inner table {
+        width: 100%;
+      }
+
+      .elc-email-template-table-inner .title {
+        color: #000;
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        padding: 50px 15px 30px;
+      }
+
+      .elc-email-template-privacy a {
+        text-decoration: none;
+        color: #ddd;
+      }
+
+      .elc-email-template-button {
+        text-align: center;
+        padding: 30px 0;
+      }
+
+      .elc-email-template-button a {
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 10px 15px;
+        background-color: #030000;
+      }
+
+      .elc-email-template-header td {
+        padding: 15px 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333333;
+        text-align: center;
+      }
+
+      .elc-email-template-footer td {
+        font-size: 12px;
+      }
+
+      @media screen and (min-width: 415px) {
+        .elc-email-template-table-inner {
+          width: 100%;
+          max-width: 430px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Email Wrap-->
+    <table cellpadding="0" cellspacing="0" class="elc-email-template-table">
+      <!--Start Logo-->
+      <tr>
+        <td>
+          <a href="{{appHost}}" target="_blank" style="display: inline-block; margin: 40px 0 20px">
+            <img class="tl-email-template-logo" src="{{logo}}" alt="ELC Trends Dashboard" border="0" />
+            <br />
+          </a>
+        </td>
+      </tr>
+      <!--End Logo-->
+      <tr>
+        <td>
+          <div class="elc-email-template-table-inner">
+            <table>
+              <!--Start Title-->
+              <tr>
+                <td style="padding-bottom: 50px">
+                  <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; padding: 15px">
+                    <tr class="elc-email-template-header">
+                      <td>{{message}}</td>
+                    </tr>
+                    <tr>
+                      <td class="elc-email-template-button">
+                        <a href="{{url}}">{{btnText}}</a>
+                      </td>
+                    </tr>
+                    <tr class="elc-email-template-header elc-email-template-footer">
+                      <td>{{footer}}</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--End Title-->
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <!--End Email Wrap-->
+  </body>
+</html>

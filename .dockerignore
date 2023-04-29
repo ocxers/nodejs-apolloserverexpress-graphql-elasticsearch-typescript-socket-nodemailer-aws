@@ -1,0 +1,13 @@
+.sass-cache/
+.nyc_output/
+docs/
+.git/
+initializr/
+node_modules/
+tools/
+.gitignore/
+.idea/
+Makefile
+.gitignore
+todo
+Dockerfile

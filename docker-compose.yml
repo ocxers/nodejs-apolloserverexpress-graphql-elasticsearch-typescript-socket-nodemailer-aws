@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  webserver:
+    build:
+      context: .
+    image: __ocxers__
+    restart: always
+    container_name: dashboard-be
+    environment:
+      - SOCKET_URL=['http://localhost:3333']
+    ports:
+      - "4433:4006"
+    volumes:
+      - ../elc_prototype:/usr/src/app/frontend/build/resources
+    networks:
+      - elc_es_net
+
+networks:
+  elc_es_net:
+    driver: bridge
